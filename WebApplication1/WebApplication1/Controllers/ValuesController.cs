@@ -19,6 +19,7 @@ namespace WebApplication1.Controllers
         [HttpGet("{id}/status")]
         public string Get(int id, int userId, [FromQuery] int test)
         {
+
             return "value";
         }
 

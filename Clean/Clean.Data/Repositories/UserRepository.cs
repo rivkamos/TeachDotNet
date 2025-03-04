@@ -18,7 +18,7 @@ namespace Clean.Core.Repositories
 
         public List<User> GetAll()
         {
-            return _context.Users;
+            return _context.Users.ToList();
         }
     }
 }

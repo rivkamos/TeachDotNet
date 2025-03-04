@@ -1,0 +1,16 @@
+{
+  "targets": {
+    "file": {
+      "type": "File",
+      "fileName": "logs/app.log",
+      "layout": "${longdate}|${level:uppercase=true}|${logger}|${message}"
+    }
+  },
+  "rules": [
+    {
+      "logger": "*",
+      "minLevel": "Debug",
+      "writeTo": "file"
+    }
+  ]
+}

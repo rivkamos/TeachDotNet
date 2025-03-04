@@ -1,4 +1,5 @@
 ﻿using Clean.Core.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace Clean.Core.Repositories
 {
     public interface IDataContext
     {
-        List<User> Users { get; set; }
+        DbSet<User> Users { get; set; }
     }
 }
